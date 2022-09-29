@@ -125,6 +125,13 @@
   "connect": {
     "sectionTitle": "Let`s connect",
     "avatarPath": "bla-bla.jpeg",
+    "boxContent": {
+      "boxTitle": "Contact",
+      "content": [
+        "I am working on improving the candidate's experience during the job search time.",
+        "I work every day with Remix, React, Hooks, Redux, NextJS, and Firebase with JavaScript and TypeScript to create amazing Apps."
+      ]
+    },
     "socialList": [
       {
         "icon": "github",
@@ -246,12 +253,12 @@
         "statsIcon": "github",
         "statsDescription": [
             "Contribution last year, over 233",
-            "Longest streak: endless"
+            "Longest streak: 10 as of 29/09/22"
         ]
       },
         {
         "statsIcon": "codewars",
-        "statsDescription": ["Rank: 8ryu", "Honor: endless +1"
+        "statsDescription": ["Rank: 7kyu", "Honor: 65"
         ]
       },
         {

@@ -1,0 +1,14 @@
+-
+  var {connect} = data.content
+.box__gap-8
+  .box__info-box 
+    .box__section-title= connect.boxContent.boxTitle 
+  .box__info-box 
+    each content in connect.boxContent.content
+      .box__descriere= content 
+.grid
+  each social in connect.socialList 
+    .grid__row-1
+      div(class=`cv-${social.icon}`)= social.title 
+     
+
