@@ -7,8 +7,26 @@
     each content in connect.boxContent.content
       .box__descriere= content 
 .grid
-  each social in connect.socialList 
-    .grid__row-1
-      div(class=`cv-${social.icon}`)= social.title 
-     
-
+  each social, key in connect.socialList 
+    input.connect-radio(
+      class=`cv-${social.icon}` 
+      type="radio" 
+      id=`connect-radio-${key}`
+      name="radio-c"
+    ) 
+  each social, key in connect.socialList 
+    .box-body(data-box=`iii-${key+1}`)
+      .flex
+        .flex-row-space
+          div= social.title
+          input.connect-radio-reset(
+            name="radio-c"
+            id="reset"
+            type="radio"
+          )
+        div= social.description
+        .line 
+        .flex-row
+          div(class=`cv-${social.icon}`)
+          a(href=`${social.link}`)= social.label
+          
