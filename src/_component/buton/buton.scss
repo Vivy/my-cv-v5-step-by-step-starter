@@ -18,12 +18,17 @@
       @extend %refolosibil;
 
       background-color: #c62a08;
+      margin-bottom: 48px;
     }
 
     &--verde {
       @extend %refolosibil;
 
       background-color: #046b2d;
+    }
+    &--black {
+      @extend %refolosibil;
+      background-color: transparent;
     }
   }
 }
