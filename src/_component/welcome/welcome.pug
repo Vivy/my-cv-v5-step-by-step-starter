@@ -1,0 +1,32 @@
+- var {sectionTitle, nameTitle, jobTitle, aboutTitle, descriptionList} = data.content.welcome
+include ../header/header
+
+.text 
+  .text__info-box
+    button.buton__normal--black
+      .icoana
+        a(href="https://www.youtube.com/watch?v=als7xoyNyoE" title="Join the revolution" target="_blank")
+          .cv-youtube
+
+    .text__info-box
+      .text__title= nameTitle
+
+      .text__info-box
+        .text__sub-title= jobTitle 
+      button.buton__normal--verde 
+        .icoana
+          .cv-arrow-down   
+        | Download
+
+  .flex-gap16 
+    .box__gap-8
+      .box__info-box
+        .text__section-title= aboutTitle
+
+      .box__info-box
+        each text in descriptionList
+          .box__descriere= text
+    button.buton__normal--rosu 
+      .icoana 
+        .cv-whatsapp
+      | Let`s chat!

@@ -1,0 +1,10 @@
+- 
+  var { sectionTitle, jobList } = data.content.experience
+//- pre= JSON.stringify(data.content.experience, null, 2)
+include ../header/header
+.dropdown
+  each context in jobList
+    .dropdown__box= context.jobTitle
+        //- .dropdown__icon= context.logo 
+        //- .dropdown__box= context.companyName
+//- input(type=dropdown)
