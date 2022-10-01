@@ -4,7 +4,9 @@
 include ../header/header
 .dropdown
   each context in jobList
+    .dropdown__icon= context.logo 
     .dropdown__box= context.jobTitle
-        //- .dropdown__icon= context.logo 
-        //- .dropdown__box= context.companyName
-//- input(type=dropdown)
+    .dropdown__box= context.companyName
+    .dropdown__arrow
+      input.chevron(type="radio" class="cv-chevron-down1")
+      .chevron= context.moreDetailes
