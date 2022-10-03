@@ -39,10 +39,14 @@
 
 .box-body {
   // position: absolute;
-  width: 200px;
-  top: 85px;
+  width: 320px;
+  position: relative;
+  flex-basis: 60%;
+  // top: 85px;
   background-color: antiquewhite;
   padding: 0 8px ;
+  // justify-content: center; 
+  // align-content: center;
 }
 
 .line {
